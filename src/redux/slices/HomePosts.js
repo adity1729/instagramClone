@@ -10,7 +10,7 @@ const HomePosts = createSlice({
   initialState,
   reducers: {
     addToPosts: (state , {payload}) => {
-      state.posts = [...state.posts , ...payload.results]
+      state.posts = [...state.posts , ...payload]
       state.page ++;
    
       
